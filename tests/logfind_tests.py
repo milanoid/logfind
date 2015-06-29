@@ -2,6 +2,7 @@ from nose.tools import *
 from hamcrest import *
 from logfind.logfind import logfind
 
+
 def setUp():
     print "SETUP!"
 
