@@ -1,17 +1,17 @@
-import argparse
 import os
 
 
-class logfind(object):
+class LogFind(object):
+    def __init__(self):
+        pass
 
-	def __init__(self):
-		pass
+    def get_home(self):
+        return os.path.expanduser('~')
 
-	def get_home(self):
-		return os.path.expanduser('~')
 
 def main():
-	print logfind().get_home()
+    print LogFind().get_home()
+
 
 if __name__ == "__main__":
-	main()
+    main()
