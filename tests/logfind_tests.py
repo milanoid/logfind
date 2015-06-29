@@ -1,15 +1,13 @@
+from nose.tools import *
 from hamcrest import *
-
 from logfind.logfind import LogFind
 
 
-def setup():
+def setUp():
     print "SETUP!"
-
 
 def teardown():
     print "TEAR DOWN!"
-
 
 def test_home_folder():
     home = LogFind().get_home()
