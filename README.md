@@ -1,7 +1,7 @@
 # logfind
 http://projectsthehardway.com/
 
-The user level features I want for logfind are:
+### The user level features I want for logfind are:
 
 # [ ] I specify what files are important in a ~/.logfind file, using regular expressions.
 # [ ] Logfind takes any number of arguments as strings to find in those files, and assumes I mean and. So looking for “zed has blue eyes” means files that have “zed AND has AND blue AND eyes” in it.
