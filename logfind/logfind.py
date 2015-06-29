@@ -1,11 +1,18 @@
 import argparse
+import os
 
-parser = argparse.ArgumentParser(description='Finds string(s) in log files. Takes any number of arguments.')
-parser.add_argument('strings', metavar='N', type=str, nargs='+',
-                   help='a string(s) to look for')
-parser.add_argument('-o', dest='logical OR', action='store_const',
-                   const=sum, default=max,
-                   help='switch logical operator to OR (AND is default)')
+class logfind(object):
 
-args = parser.parse_args()
-print args.accumulate(args.integers)
+	def __init__(self):
+		pass
+
+	def get_home(self):
+		return os.path.expanduser('~')
+
+
+def main():
+	print logfind().get_home()
+
+
+if __name__ == "__main__":
+	main()

@@ -1,13 +1,13 @@
 from nose.tools import *
-import logfind
+from hamcrest import *
+from logfind.logfind import logfind
 
 def setUp():
-    #super(logfind_tests, self).setUp()
     print "SETUP!"
 
 def teardown():
-    #super(logfind_tests, self).tearDown()
     print "TEAR DOWN!"
 
-def test_basic():
-    print "I RAN!"
+def test_home_folder():
+    home = logfind().get_home()
+    assert_that(home, equal_to("C:\Users\Milan"))
