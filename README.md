@@ -9,3 +9,14 @@ http://projectsthehardway.com/
 # [ ] I want to be able to install logfind on my computer and run it like other projects. However, donâ€™t push this to PyPI as thatâ€™ll really annoy people.
 # [ ] Extra bonus points if you can let me specify regular expressions as things to find in files.
 # [ ] Finally, speed counts, so whoever can make the fastest logfind will win the prize. The prize is nothing, but you know you want it.
+=======
+# Projects The Hard Way
+
+## Project 1: logfind
+
+```bash
+$ logfind zedshaw
+```
+The results of this will be a list of all files that have one instance of the word ‘zedshaw’ in them.
+
+For full spec see http://projectsthehardway.com/
